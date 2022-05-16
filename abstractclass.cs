@@ -12,6 +12,6 @@ abstract class Mammal {
 
 class Platypus : Mammal { 
 	override public String chew() { 
-	return "kibirliahmetsevgili!"; 
+	return "kibirveahmetsevgili!"; 
 	}  
 }
