@@ -66,6 +66,7 @@ async Task FetchAndShowHeaders(string url)
 		Console.WriteLine("\nsoner4_method_inside Thread Name = {0}", Thread.CurrentThread.ManagedThreadId);
 }
 
+/*
 soner1 Thread Name = 1
 
 soner3_method_inside Thread Name = 1
@@ -75,3 +76,4 @@ soner5 Thread Name = 1
 
 soner4_method_inside Thread Name = 7
 soner6 Thread Name = 7
+*/
