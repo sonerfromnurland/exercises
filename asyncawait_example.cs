@@ -39,3 +39,39 @@ soner4_method_inside Thread Name = 10
 soner5 Thread Name = 1
 soner6 Thread Name = 1
 */
+
+
+//veya
+
+Console.WriteLine("soner1 Thread Name = {0}", Thread.CurrentThread.ManagedThreadId);
+Task q = FetchAndShowHeaders("http://www.fultonbank.com");
+Console.WriteLine("soner2 Thread Name = {0}", Thread.CurrentThread.ManagedThreadId);
+for (int i = 0; i < 11; i++)
+{
+	for (int ii = 0; ii < 11; ii++)
+	{
+		//if (i % 500_000 == 0)
+			Console.Write(".");
+	}
+}
+Console.WriteLine("\nsoner5 Thread Name = {0}", Thread.CurrentThread.ManagedThreadId);
+await q;
+Console.WriteLine("soner6 Thread Name = {0}", Thread.CurrentThread.ManagedThreadId);
+return;
+
+async Task FetchAndShowHeaders(string url)
+{
+	Console.WriteLine("\nsoner3_method_inside Thread Name = {0}", Thread.CurrentThread.ManagedThreadId);
+		await Task.Delay(1000);
+		Console.WriteLine("\nsoner4_method_inside Thread Name = {0}", Thread.CurrentThread.ManagedThreadId);
+}
+
+soner1 Thread Name = 1
+
+soner3_method_inside Thread Name = 1
+soner2 Thread Name = 1
+.........................................................................................................................
+soner5 Thread Name = 1
+
+soner4_method_inside Thread Name = 7
+soner6 Thread Name = 7
