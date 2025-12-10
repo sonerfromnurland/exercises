@@ -12,8 +12,7 @@ namespace ConsoleApp2
         /*
         private static readonly string[] AllowedHardwareIds =
         {
-            "148B640FC9FFE81B5BB9DC570C1BC08F12C469959BE5988ACE0169FC2C72E13A",
-            "FF133CD63CEE837603D60B678946143921B8B35E0D5C87D84BFFD28E66D00E88" //benim makine id
+            
         };
         */
         // REPLACE the old AllowedHardwareIds field with this:
@@ -25,8 +24,7 @@ namespace ConsoleApp2
             // They are Base64 of (UTF8 bytes of HWID XOR 0x5A).
 
             // Obfuscated form of:
-            // 148B640FC9FFE81B5BB9DC570C1BC08F12C469959BE5988ACE0169FC2C72E13A
-            // FF133CD63CEE837603D60B678946143921B8B35E0D5C87D84BFFD28E66D00E88
+
 
             string obf1 = "a25iGGxuahwZYxwcH2JrGG8YGGMeGW9tahlrGBlqYhxraBlubGNjb2MYH29jYmIbGR9qa2xjHBloGW1oH2tpGw==";
             string obf2 = "HBxraWkZHmxpGR8fYmltbGppHmxqGGxtYmNubGtuaWNoaxhiGGlvH2oebxlibR5ibhgcHB5oYh9sbB5qah9iYg==";
@@ -208,3 +206,4 @@ namespace ConsoleApp2
     }
 
 }
+
