@@ -69,7 +69,7 @@ namespace ConsoleApp2
                 return;
             }
 
-            Console.WriteLine("3DES Decrypt Console for Fettah Yilmaz");
+            Console.WriteLine("3DES Decrypt Example Console for Fettah Abi");
             Console.ResetColor();
             Console.WriteLine("Type base64 data to decrypt.");
             Console.WriteLine("Press 'E' or type 'exit' to quit.\n");
@@ -206,4 +206,5 @@ namespace ConsoleApp2
             Console.WriteLine();
         }
     }
+
 }
